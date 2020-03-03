@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{FC47BF86-EF2C-6FB2-1BE8-8B373B286C04}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerRule.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Data/GridSlot.cs" Line="55" Column="24" />
+      <File FileName="Assets/Scripts/Data/MapSlot.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/Data/GameData.cs" Line="37" Column="5" />
+      <File FileName="Assets/Scripts/PlayerRule.cs" Line="4" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bots" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="PlayerRule.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6e881ebb-eaad-4133-9f0f-9729b02d56d1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

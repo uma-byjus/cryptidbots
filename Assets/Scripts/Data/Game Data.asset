@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03829ef10f3547a48ca8f7cf3b80eac, type: 3}
+  m_Name: Game Data
+  m_EditorClassIdentifier: 
+  terrains:
+  - tName: Water
+    tType: 0
+    tColor: {r: 0, g: 0.7911868, b: 1, a: 1}
+  - tName: Moutain
+    tType: 1
+    tColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
+  - tName: Forest
+    tType: 2
+    tColor: {r: 0.47197294, g: 0.8018868, b: 0.15508187, a: 1}
+  - tName: Swamp
+    tType: 3
+    tColor: {r: 0.3679245, g: 0.0746262, b: 0.20079365, a: 1}
+  - tName: Desert
+    tType: 4
+    tColor: {r: 1, g: 0.67976373, b: 0, a: 1}
+  structures:
+  - sName: Blue Standing Stone
+    structure: 0
+    sColor: 0
+    color: {r: 0, g: 0.16215563, b: 1, a: 1}
+    sShape: {fileID: 21300000, guid: 1713d189cdcef4035a80572225840418, type: 3}
+  - sName: Blue Abandoned Shack
+    structure: 1
+    sColor: 0
+    color: {r: 0, g: 0.16215563, b: 1, a: 1}
+    sShape: {fileID: -7885179612887242082, guid: 59d8573dc09fb45d890179c835de8ec4,
+      type: 3}
+  - sName: Green Standing Stone
+    structure: 0
+    sColor: 2
+    color: {r: 0.1255349, g: 0.41509432, b: 0.03328587, a: 1}
+    sShape: {fileID: 21300000, guid: 1713d189cdcef4035a80572225840418, type: 3}
+  - sName: Green Abandoned Shack
+    structure: 1
+    sColor: 2
+    color: {r: 0.21568629, g: 0.40784317, b: 0.11764707, a: 1}
+    sShape: {fileID: -7885179612887242082, guid: 59d8573dc09fb45d890179c835de8ec4,
+      type: 3}
+  - sName: White Standing Stone
+    structure: 0
+    sColor: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    sShape: {fileID: 21300000, guid: 1713d189cdcef4035a80572225840418, type: 3}
+  - sName: White Abandoned Shack
+    structure: 1
+    sColor: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+    sShape: {fileID: -7885179612887242082, guid: 59d8573dc09fb45d890179c835de8ec4,
+      type: 3}
+  - sName: Black Standing Stone
+    structure: 0
+    sColor: 3
+    color: {r: 0, g: 0, b: 0, a: 1}
+    sShape: {fileID: 21300000, guid: 1713d189cdcef4035a80572225840418, type: 3}
+  - sName: Black Abandoned Shack
+    structure: 1
+    sColor: 3
+    color: {r: 0, g: 0, b: 0, a: 1}
+    sShape: {fileID: -7885179612887242082, guid: 59d8573dc09fb45d890179c835de8ec4,
+      type: 3}
+  regions:
+  - rName: None
+    rType: 0
+    rColor: {r: 0, g: 0, b: 0, a: 0}
+  - rName: Cougar Territory
+    rType: 1
+    rColor: {r: 0.764151, g: 0.1477839, b: 0.1477839, a: 1}
+  - rName: Bear Territory
+    rType: 2
+    rColor: {r: 0.7264151, g: 0.31092626, b: 0, a: 1}
+  decisionSprites:
+  - {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 21300000, guid: 1713d189cdcef4035a80572225840418, type: 3}
+  players:
+  - playerName: Alpha
+    playerRules: {fileID: 11400000, guid: 869851987ded94f9fb03a8cc25e8ead4, type: 2}
+    playerColor: {r: 0.5566038, g: 0.17065683, b: 0.17065683, a: 1}
+  - playerName: Beta
+    playerRules: {fileID: 11400000, guid: e9d127c67675d4d47afad4b01f48312c, type: 2}
+    playerColor: {r: 0.27071422, g: 0.3773585, b: 0.23673905, a: 1}
+  - playerName: Gamma
+    playerRules: {fileID: 11400000, guid: 977b7a4a461e74e859fa0b73ae88f4f8, type: 2}
+    playerColor: {r: 0.374466, g: 0.4770233, b: 0.9339623, a: 1}
+  - playerName: Delta
+    playerRules: {fileID: 11400000, guid: 950eb8cb8c03040e697a90fb19f91316, type: 2}
+    playerColor: {r: 0.3490566, g: 0.21991177, b: 0.12677999, a: 1}
+  - playerName: Epsilon
+    playerRules: {fileID: 11400000, guid: 7a24a8e57cde24bdf9d0c56ca85b3d79, type: 2}
+    playerColor: {r: 0.7220608, g: 0.47378963, b: 0.8584906, a: 1}
