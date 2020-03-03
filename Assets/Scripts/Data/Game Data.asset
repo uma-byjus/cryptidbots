@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03829ef10f3547a48ca8f7cf3b80eac, type: 3}
   m_Name: Game Data
   m_EditorClassIdentifier: 
+  MapData: {fileID: 4900000, guid: 3cffd28a7d3bb4ba592ff5ab617d881a, type: 3}
   terrains:
   - tName: Water
     tType: 0

@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{FC47BF86-EF2C-6FB2-1BE8-8B373B286C04}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerRule.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Data/MapData.txt">
     <Files>
-      <File FileName="Assets/Scripts/Data/GridSlot.cs" Line="55" Column="24" />
-      <File FileName="Assets/Scripts/Data/MapSlot.cs" Line="16" Column="1" />
-      <File FileName="Assets/Scripts/Data/GameData.cs" Line="37" Column="5" />
-      <File FileName="Assets/Scripts/PlayerRule.cs" Line="4" Column="12" />
+      <File FileName="Assets/Scripts/Data/GridSlot.cs" Line="108" Column="52" />
+      <File FileName="Assets/Scripts/Data/MapSlot.cs" Line="21" Column="93" />
+      <File FileName="Assets/Scripts/Data/GameData.cs" Line="16" Column="6" />
+      <File FileName="Assets/Scripts/PlayerRule.cs" Line="37" Column="32" />
+      <File FileName="Assets/Scripts/Data/MapData.txt" Line="1" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +13,9 @@
           <Node name="Bots" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerRule.cs" selected="True" />
+                <Node name="Data" expanded="True">
+                  <Node name="MapData.txt" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -24,7 +27,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6e881ebb-eaad-4133-9f0f-9729b02d56d1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/umapraveen/Desktop/Bots/Assets/Scripts/GridManager.cs" relfile="Assets/Scripts/GridManager.cs" line="99" column="1" />
+      <Breakpoint file="/Users/umapraveen/Desktop/Bots/Assets/Scripts/GridManager.cs" relfile="Assets/Scripts/GridManager.cs" line="117" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace CBot
 {
+
     [System.Serializable]
     public struct TerrainData
     {
@@ -37,6 +38,7 @@ namespace CBot
     [CreateAssetMenu(fileName ="Game Data",menuName ="Create / Game Data",order = 0)]
     public class GameData : ScriptableObject
     {
+        public TextAsset MapData;
         public List<TerrainData> terrains = new List<TerrainData>();
         public List<StructureData> structures = new List<StructureData>();
         public List<RegionData> regions = new List<RegionData>();

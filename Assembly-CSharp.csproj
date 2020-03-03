@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\GridManager.cs" />
     <Compile Include="Assets\Scripts\MapSlot.cs" />
     <Compile Include="Assets\Scripts\PlayerRule.cs" />
+    <None Include="Assets\Scripts\Data\MapData.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/umapraveen/Desktop/Bots/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
