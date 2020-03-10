@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a742a95e7f39f4ee28283b2c0e374fde, type: 3}
+  m_Name: Within one space of DESERT
+  m_EditorClassIdentifier: 
+  clueType:
+    isTwoTypeOfTerrain: 0
+    typeOne: 0
+    typeTwo: 0
+    isWithinOneSpaceOfTerrain: 1
+    withinOneSpaceOfTerrain: 4
+    isWithinOneSpaceOfTerritory: 0
+    withinOneSpaceOfTerritory: 0
+    isWithinTwoSpaceOfTerritory: 0
+    withinTwoSpaceOfTerritory: 0
+    isWithinTwoSpaceOfStructure: 0
+    withinTwoSpaceOfStructure: 0
+    isWithinThreeSpaceOfStructure: 0
+    withinThreeSpaceOfColorStructure: 0

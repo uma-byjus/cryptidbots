@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143c2aedf7b11441a97eab29723fbb7c, type: 3}
+  m_Name: MapDataset 2
+  m_EditorClassIdentifier: 
+  segmentIds: 010000000600000004000000020000000500000003000000
+  isSegmentInverted: 000000010101
+  structureInfo:
+  - structureType: 2
+    structureColor: 1
+    structurePos: {x: 6, y: 2}
+  - structureType: 1
+    structureColor: 1
+    structurePos: {x: 9, y: 6}
+  mapHints:
+    alpha: 010000004800000038000000
+    beta: 3e000000110000004f000000
+    gamma: ffffffff360000002c000000
+    delta: ffffffffffffffff4a000000
+    elipson: 150000001c00000009000000
+    openToAll: 370000001b0000004c000000
