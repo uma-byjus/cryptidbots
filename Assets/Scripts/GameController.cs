@@ -6,7 +6,7 @@ public class GameController : MonoBehaviour
 {
     public List<IPlayerController> playerList;
     public List<ClueType> playerClues;
-    public MapController mapController;
+    [SerializeField]private MapController mapController;
     public GridModel[,] mapGrid;
 
     private bool hasGameStarted = false;
@@ -59,6 +59,10 @@ public class GameController : MonoBehaviour
     private void PlayerNegativeCheck(ClueType clue, Grid grid) {
         
     }
+
+    public List<GridModel> GetTileWithinRadius(GridIndex gridIndex, int noOfSpace) {
+        return mapController.GetTileWithin(gridIndex, noOfSpace);
+    } 
 
 }
 

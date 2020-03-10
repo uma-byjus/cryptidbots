@@ -10,15 +10,13 @@ public class MapController : MonoBehaviour
     public GameObject parentGO;
    
     [Space]
-    public Color[] haxColor = new Color[5];
     private GridModel[,] grid = new GridModel[12,9];
 
     private float size = 3.6f;
     private float width;
     private float height;
-    private List<GridView> gridViews = new List<GridView>();
+    private GridView[,] gridViews = new GridView[12,9];
     
-    public Vector2 checkAtPos = new Vector2(5,5);
 
     // Start is called before the first frame update
     void Start()
@@ -113,54 +111,22 @@ public class MapController : MonoBehaviour
         return grid;
     }
 
-    public List<GridModel> GetTilesWithinOneSpace(int x, int y) {
-        List<GridModel> tilesWithinOneSpace = new List<GridModel>();
-        // if left side not empty
-        if (x - 1 >= 0) {
-            tilesWithinOneSpace.Add(grid[x - 1, y]);
-        }
-        // if right side not empty
-        if (x + 1 <= 11) {
-            tilesWithinOneSpace.Add(grid[x + 1, y]);
-        }
+    public List<GridModel> GetTileWithin(GridIndex gridIndex, int noOfSpace) {
+        noOfSpace = Mathf.Clamp(noOfSpace, 1, 3);
+        List<GridModel> tilesWithin = new List<GridModel>();
+        float range = (size * 2f * noOfSpace * 0.75f) + size;
+        Vector3 pos = gridViews[(int)gridIndex.x, (int)gridIndex.y].transform.position;
 
-        // if index it odd (event col in map) take 1 from top & 3 from bot 
-        if (x % 2 == 1) {
-            // if top not empty
-            if (y - 1 >= 0) {
-                tilesWithinOneSpace.Add(grid[x, y - 1]);
-            }
-            // if bot not empty
-            if (y + 1 <= 8) {
-                tilesWithinOneSpace.Add(grid[x, y + 1]);
-                
-                if (x - 1 >= 0) {
-                    tilesWithinOneSpace.Add(grid[x + 1, y + 1]);
-                }
-                if (x + 1 <= 11) {
-                    tilesWithinOneSpace.Add(grid[x + 1, y + 1]);
-                }
-            }
-        } else {
-            // if its even (odd col in map) take 3 from top & 1 from bot
-            if (y + 1 <= 11) {
-                tilesWithinOneSpace.Add(grid[x, y + 1]);
-            }
-            
-            if (y - 1 >= 0) {
-                tilesWithinOneSpace.Add(grid[x, y - 1]);
-
-                if (x - 1 >= 0) {
-                    tilesWithinOneSpace.Add(grid[x + 1, y - 1]);
-                }
-                if (x + 1 <= 11) {
-                    tilesWithinOneSpace.Add(grid[x + 1, y - 1]);
-                }
+        foreach(GridView gView in gridViews) {
+            float dist = Vector3.Distance(pos, gView.transform.position);
+            if (dist < range) {
+                tilesWithin.Add(gView.gridModel);
             }
         }
-
-        return tilesWithinOneSpace;
+        // Debug.Log("Number of Tile in within " + fromCenter + " is " + tilesWithinOneSpace.Count);
+        return tilesWithin;
     }
+
     private void DrawMap () {
         Debug.Log("Size " + size);
         Debug.Log("Height "+ height);
@@ -176,7 +142,12 @@ public class MapController : MonoBehaviour
                 }
                 gridGO.transform.localPosition = pos;
 
-                gridGO.GetComponent<GridView>().Init(grid[i, j]);
+                GridView gridView = gridGO.GetComponent<GridView>();
+                gridView.Init(grid[i, j]);
+                gridView.gridIndex.x = i;
+                gridView.gridIndex.y = j;
+                gridViews[i, j] = gridView;
+
                 // gridGO.color = haxColor[(int)grid[i, j].gridType];
             }
         }

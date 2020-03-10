@@ -13,7 +13,7 @@ public class GridView : MonoBehaviour
     public Color[] haxColor = new Color[5];
     public Color[] structureColor = new Color[4];
     public GridModel gridModel;
-    public Vector2 gridIndex;
+    public GridIndex gridIndex = new GridIndex();
 
     private SpriteRenderer gridSprite;
     // Start is called before the first frame update
